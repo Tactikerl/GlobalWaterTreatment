@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GWT - OUR PRODUCTS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link rel="stylesheet" href="industry.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        line-height: 1.8;
+      }
+      .w3-bar .w3-button {
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="navbar">
+      <div class="navbar-content" id="myNavbar">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide"
+          ><img style="width: 200px" src="assets/img/GWP logo.png"
+        /></a>
+        <!-- Right-sided navbar links -->
+        <div class="navbar-contact">
+          <a href="mailto:gwt@globalwater.no">gwt@globalwater.no</a>
+          <span>+47 941 35 100</span>
+        </div>
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="blue-banner">
+        <h1>World-wide since 1938</h1>
+      </div>
+      <div class="blue-navbar w3-hide-small">
+        <a href="/">Home</a>
+        <a href="domestic.html">Domestic</a>
+        <a href="industry.html">Industry</a>
+        <a href="shipandoffshore.html">Shipping/Offshore</a>
+        <a href="snowboost.html">Snow-Boost</a>
+        <a href="agriculture.html">Agriculture</a>
+        <a href="partners.html">Partners</a>
+        <a href="history.html#history">History</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close ×</a
+      >
+      <a href="/" class="w3-bar-item w3-button">Home</a>
+      <a href="domestic.html" class="w3-bar-item w3-button">Domestic</a>
+      <a href="industry.html" class="w3-bar-item w3-button">Industry</a>
+      <a href="shipandoffshore.html" class="w3-bar-item w3-button"
+        >Shipping/Offshore</a
+      >
+      <a href="snowboost.html" class="w3-bar-item w3-button">Snow-Boost</a>
+      <a href="agriculture.html" class="w3-bar-item w3-button">Agriculture</a>
+      <a href="partners.html" class="w3-bar-item w3-button">Partners</a>
+      <a href="history.html#history" class="w3-bar-item w3-button">History</a>
+      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    </nav>
+
+    <div class="container" id="home">
+      <div class="industry-column">
+        <div class="industry-row">
+          <div class="row-content">
+            <!--<img class="infoimg" src="assets/img/rustwaterinfo.png" alt="" />-->
+            <h1 style="margin-bottom: 0">Our industrial range</h1>
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1fr 1.2fr 2fr;
+                align-items: center;
+              "
+            >
+              <img style="width: 100%" src="assets/img/PI-18.jpg" alt="" />
+              <img
+                style="width: 100%; rotate: -6deg"
+                src="assets/img/header_img.jpg"
+                alt=""
+              />
+              <img
+                style="width: 100%; rotate: 17deg; z-index: -1"
+                src="assets/img/pms.jpg"
+                alt=""
+              />
+            </div>
+            <h2 style="margin: 0">Example:</h2>
+            <p>
+              <b
+                >Polar corrosion protection for cold and hot water pipe
+                air-conditioning system.<br />
+                Still running strong after 17 years and 5 months.</b
+              ><br />
+              Source: POLAR NEWS NO.51, (translated with DeepL.com) from
+              Polar-distributor Nippon-Selpo in Japan
+            </p>
+
+            <h3>Location</h3>
+            <p>A large home-centre / large block of flats</p>
+
+            <h3>Installation date</h3>
+            <p>
+              October 2002 (17 years and 5 months have passed since installation
+              at new build)
+            </p>
+
+            <h3>Purpose</h3>
+            <p>
+              Rust prevention measures for newly installed air conditioning cold
+              and hot water equipment
+            </p>
+            <!--<ul style="list-style: none">
+              <li
+                class="image-wrapper-industry"
+                style="background-image: url('assets/img/example.png')"
+              ></li>
+            </ul>-->
+            <div class="frame-container">
+              <img src="assets/img/example.png" alt="" class="industry-image" />
+            </div>
+
+            <p>
+              POLAR Model: PI-20CF (20A) installed for cold/hot water, 5%
+              partial support method from outgoing pipe to return pipe (no pump
+              required)<br />
+              Treatment water volume: Treats over 5% of cold/hot water
+              circulating water volume
+            </p>
+            <figure
+              style="
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                flex-wrap: wrap;
+              "
+            >
+              <img
+                src="assets/img/pipe123.png"
+                style="width: 400px; height: auto"
+                alt="Photo of the pipe carrying hot or cold water according to outside temperature/season of year"
+              />
+              <figcaption>
+                POLAR was installed at the time of the replacement of the hot
+                and cold generator
+                <ol class="industry-list" style="margin: 0; padding: 15px">
+                  <li>Polar main unit</li>
+                  <li>Magnetic strainer</li>
+                  <li>Flow meter</li>
+                </ol>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="industry-row">
+          <div class="row-content">
+            Photo of hot and cold water pipes after 17 years and 5 months of
+            Polar treatment since new construction
+            <figure style="margin: 20px 20px 0 0; float: left">
+              <img
+                style="width: auto; height: 30vh; object-fit: contain"
+                src="assets/img/cleanpipe.jpg"
+              />
+              <figcaption>POLAR treatment - 17 years 5 months</figcaption>
+            </figure>
+
+            <p>
+              Photo of hot and cold water pipes after 17 years and 5 months of
+              Polar treatment since new construction. <br /><br />
+              Due to the anti-corrosion effect of Polar, there is no vorrosion
+              on the inside of the pipes and they are covered with an extremely
+              thin, dense and uniform anti-rust film containing minerals. This
+              film prevents corrosion by blocking the reaction (corrosion)
+              between oxygen and iron in the water. Expected remaining service
+              life: More than 20 years (due to continuous POLAR treatment).
+              <br />The equipment contractor who carried out the reneweal work
+              was suprised that he had never seen hot and cold water pipes so
+              clean after more than 17 years.
+            </p>
+          </div>
+        </div>
+        <div class="industry-row">
+          <div class="row-content">
+            <figure style="margin: 20px 20px 0 0; float: left">
+              <img
+                style="width: auto; height: 30vh; object-fit: contain"
+                src="assets/img/dirtypipe.jpg"
+              />
+              <figcaption>
+                18 years after no treatment<br />(from another location)
+              </figcaption>
+            </figure>
+
+            <p>
+              This is a picture of the inside of a hot and cold water-pipe at
+              another location the same client came to consult with
+              us.(Reference image)
+              <br /><br />
+              Rust bumbps appear on the entire surface and if the progress of
+              the rust is not controlled, it will lead to pipe blockages, holes
+              and water leaks.
+              <br /><br />
+              Expected remaining service life: If untreated, there is a high
+              possibility of problems within a few years.
+            </p>
+          </div>
+        </div>
+        <div class="industry-row">
+          <div class="row-content">
+            <h3>Conclusion</h3>
+            <p>
+              Air conditioning pipes for cold and hot water are laid out
+              throughout the building. Corrosive water damages piping,
+              machinery, valves, vents, etc., reducing lifetime,
+              thermal-efficiency, and negatively impacting electricity and fuel
+              costs, leading to a wasteful decline in asset value.
+              <br /><br />
+              The POLAR treatment exerts its anti-corrosion effect by forming a
+              film on the rust nodes even when significant rust has formed.
+              Installing POLAR before a serious situation develops will extend
+              system lifetime.
+            </p>
+            <h3>Polar-Japan Installation Reference List</h3>
+            <span>
+              <strong
+                >Public offices, public facilities, hotels, condominiums,
+                buildings, etc.:</strong
+              >
+            </span>
+            <ul style="margin-top: 0">
+              <li>Japan Atomic Energy Research Institute (Ibaraki)</li>
+              <li>
+                Power Reactor and Nuclear Fuel Development Corporation (Ibaraki)
+              </li>
+              <li>East Japan Railway Company (Tokyo)</li>
+              <li>Tama City Heated Swimming Pool (Tokyo)</li>
+              <li>Tochigi Health and Activity Forest (Tochigi)</li>
+              <li>Otawara City Hall (Tochigi)</li>
+              <li>Narita City Hall (Chiba)</li>
+              <li>
+                Higashimatsuyama City South Area Civic Activity Centre (Saitama)
+              </li>
+              <li>... (additional locations)</li>
+            </ul>
+
+            <span><strong>Medical Institutions and Schools:</strong></span>
+            <ul style="margin-top: 0">
+              <li>
+                The University of Tokyo Institute of Medical Science (Tokyo)
+              </li>
+              <li>Tokyo Metropolitan Neurological Hospital (Tokyo)</li>
+              <li>Tokyo Metropolitan Institute of Neuroscience (Tokyo)</li>
+              <li>Tokyo Metropolitan Fuchu Rehabilitation Centre (Tokyo)</li>
+              <li>... (additional locations)</li>
+            </ul>
+
+            <span><strong>Factories:</strong></span>
+            <ul style="margin-top: 0">
+              <li>Toyota Motor Corporation (Aichi)</li>
+              <li>Toyoda Gosei Co.</li>
+              <li>Aisin AW Co.</li>
+              <li>Sumitomo Light Metal Industries, Ltd.</li>
+              <li>Tokai Rika Corporation (Aichi)</li>
+              <li>... (additional locations)</li>
+            </ul>
+
+            <p>
+              <em
+                >As of Sept 2011: Total number of Polar-units installed: more
+                than 5,000</em
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="w3-center w3-black w3-padding-64">
+      <p>Water treatment since 1938</p>
+      <br />
+      <a href="#home" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+    </footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

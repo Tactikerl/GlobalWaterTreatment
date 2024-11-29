@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="history.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .table-container {
+        display: flex;
+        justify-content: center;
+      }
+      .table {
+        border-collapse: collapse;
+      }
+      .table th {
+        background-color: yellow;
+        padding: 10px;
+        text-align: left;
+        font-weight: bold;
+        border: 1px solid #000;
+      }
+      .table td {
+        padding: 10px;
+        border: 1px solid #000;
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="navbar">
+      <div class="navbar-content" id="myNavbar">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide"
+          ><img style="width: 200px" src="assets/img/GWP logo.png"
+        /></a>
+        <!-- Right-sided navbar links -->
+        <div class="navbar-contact">
+          <a href="mailto:gwt@globalwater.no">gwt@globalwater.no</a>
+          <span>+47 941 35 100</span>
+        </div>
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="blue-banner">
+        <h1>World-wide since 1938</h1>
+      </div>
+      <div class="blue-navbar w3-hide-small">
+        <a href="/">Home</a>
+        <a href="domestic.html">Domestic</a>
+        <a href="industry.html">Industry</a>
+        <a href="shipandoffshore.html">Shipping/Offshore</a>
+        <a href="snowboost.html">Snow-Boost</a>
+        <a href="agriculture.html">Agriculture</a>
+        <a href="partners.html">Partners</a>
+        <a href="history.html#history">History</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close ×</a
+      >
+
+      <a href="/" class="w3-bar-item w3-button">Home</a>
+      <a href="domestic.html" class="w3-bar-item w3-button">Domestic</a>
+      <a href="industry.html" class="w3-bar-item w3-button">Industry</a>
+      <a href="shipandoffshore.html" class="w3-bar-item w3-button"
+        >Shipping/Offshore</a
+      >
+      <a href="snowboost.html" class="w3-bar-item w3-button">Snow-Boost</a>
+      <a href="agriculture.html" class="w3-bar-item w3-button">Agriculture</a>
+      <a href="partners.html" class="w3-bar-item w3-button">Partners</a>
+      <a href="history.html#history" class="w3-bar-item w3-button">History</a>
+      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header
+      class="bgimg-1 w3-display-container w3-grayscale-min"
+      id="home"
+    ></header>
+    <!-- About Section -->
+    <div
+      class="container"
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+      "
+      id="about"
+    >
+      <img style="width: 100%" src="assets/img/shipandoffshore01.webp" alt="" />
+      <div style="width: 100%; background-color: rgb(50, 169, 222)">
+        <h1
+          style="
+            color: white;
+            text-align: center;
+            padding: 23px;
+            letter-spacing: 2px;
+          "
+        >
+          POLAR PWT - AT A GLANCE
+        </h1>
+      </div>
+      <h2>Worldwide Approved Potable Water Treatment</h2>
+      <div class="table-container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Features</th>
+              <th>Benefits</th>
+              <th>Outcome</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Optimized Water Hardening by controlled Silicate milk injection
+                (Plug and Play dosing system)
+              </td>
+              <td>Protects pipes, tanks, coating from Corrosion</td>
+              <td>
+                The best solution to the number one paragraph in water
+                treatment: “The water must not be corrosive”
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                In corroded systems and/or when taking rusty water from shore,
+                the Water-glass (Silicate milk) cleans the red water so it
+                becomes fully transparent.
+              </td>
+              <td>
+                Cristal clear water (Step 1)<br />White laundry now possible
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Adjusts pH</td>
+              <td>Meets legislative requirements</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Nonhazardous liquid</td>
+              <td>Environmentally friendly</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Approved for drinking water</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Approved for air freight</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Global availability</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                Real-time flow monitoring with Signal Pulse dosing control
+              </td>
+              <td>Controlled dosing</td>
+              <td>Optimized safety</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Exact dosing of Silicate milk</td>
+              <td>Optimized economy</td>
+            </tr>
+            <tr>
+              <td>Magnetic Strainers (PMS)</td>
+              <td>
+                Arrests red and brown corrosion released from worn piping and/or
+                when taking poor quality water from shore.
+              </td>
+              <td>Cristal clear water (Step 2)</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Cleans the system without downtime</td>
+            </tr>
+            <tr>
+              <td>Induction-filters (PI)</td>
+              <td>Reduces the water surface-tension</td>
+              <td>
+                Removal of Rust-foam, Scale and related Bio-film.<br />NOTE:
+                this cannot be achieved by UV + Chlorination alone<br />Full
+                flow restored
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>In addition for carbon steel piping</td>
+              <td>Protective magnetite coating</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="frame-container" style="width: 100%; --misty-border: 2%">
+        <img
+          style="width: 100%; height: auto"
+          src="assets/img/magfiltration.jpg"
+          alt=""
+        />
+      </div>
+      <div class="frame-container" style="width: 100%; --misty-border: 2%">
+        <img
+          style="width: 100%; height: auto"
+          src="assets/img/hardeningkit02.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+      <p>Water treatment since 1938</p>
+      <br />
+      <a href="#home" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+    </footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
