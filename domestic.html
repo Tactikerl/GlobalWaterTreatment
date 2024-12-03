@@ -1,238 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>GWT DOMESTIC - DEV ENVIRONMENT</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="industry.css" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Raleway" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <style>
-    body,
-    html {
-      height: 100%;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GWT DOMESTIC - DEV ENVIRONMENT</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="industry.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+      }
 
-    .w3-bar .w3-button {
-      padding: 16px;
-    }
-  </style>
-</head>
-<body>
-  <!-- Navbar (sit on top) -->
-  <div class="navbar">
-    <div class="navbar-content" id="myNavbar">
-      <a href="index.html"
-        class="w3-bar-item w3-button w3-wide"><img
-          style="width: 200px"
-          src="assets/img/GWP logo.png" /></a>
-      <!-- Right-sided navbar links -->
-      <div class="navbar-contact">
+      .w3-bar .w3-button {
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="navbar">
+      <div class="navbar-content" id="myNavbar">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide"
+          ><img style="width: 200px" src="assets/img/GWP logo.png"
+        /></a>
+        <!-- Right-sided navbar links -->
+        <div class="navbar-contact">
+          <a href="mailto:gwt@globalwater.no">gwt@globalwater.no</a>
+          <span>+47 941 35 100</span>
+        </div>
         <a
-          href="mailto:gwt@globalwater.no">gwt@globalwater.no</a>
-        <span>+47 941 35 100</span>
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-      <a href="javascript:void(0)"
-        class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-        onclick="w3_open()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    <div class="blue-banner">
-      <h1>World-wide since 1938</h1>
-    </div>
-    <div class="blue-navbar w3-hide-small">
-      <a href="/">Home</a>
-      <a href="domestic.html">Domestic</a>
-      <a href="industry.html">Industry</a>
-      <a href="shipandoffshore.html">Shipping/Offshore</a>
-      <a href="snowboost.html">Snow-Boost</a>
-      <a href="agriculture.html">Agriculture</a>
-      <a href="partners.html">Partners</a>
-      <a href="history.html#history">History</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
-
-  <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav
-    class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
-    style="display: none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()"
-      class="w3-bar-item w3-button w3-large w3-padding-16">Close
-      ×</a>
-
-    <a href="/" class="w3-bar-item w3-button">Home</a>
-    <a href="domestic.html"
-      class="w3-bar-item w3-button">Domestic</a>
-    <a href="industry.html"
-      class="w3-bar-item w3-button">Industry</a>
-    <a href="shipandoffshore.html"
-      class="w3-bar-item w3-button">Shipping/Offshore</a>
-    <a href="snowboost.html"
-      class="w3-bar-item w3-button">Snow-Boost</a>
-    <a href="agriculture.html"
-      class="w3-bar-item w3-button">Agriculture</a>
-    <a href="partners.html"
-      class="w3-bar-item w3-button">Partners</a>
-    <a href="history.html#history"
-      class="w3-bar-item w3-button">History</a>
-    <a href="contact.html"
-      class="w3-bar-item w3-button">Contact</a>
-  </nav>
-
-  <!-- Header with full-height image -->
-  <header
-    class="bgimg-1 w3-display-container w3-grayscale-min"
-    id="home"></header>
-
-  <!-- About Section -->
-  <div class="container" id="about">
-    <div class="flex-container">
-      <div class="domestic-list-container">
-        <h4>The Hard-water challenge:</h4>
-        <ul>
-          <li>Say yes to healthy Calcium in your potable
-            water</li>
-          <li>But say no to scale…</li>
-          <img loading="lazy" src="assets/img/PI-18.jpg"
-            alt="image of product name PL-18" />
-          <li>No pollution or bad taste from salt-tablets
-          </li>
-          <li>Maintains the original water hardness</li>
-        </ul>
+      <div class="blue-banner">
+        <h1>World-wide since 1938</h1>
       </div>
+      <div class="blue-navbar w3-hide-small">
+        <a href="/">Home</a>
+        <a href="domestic.html">Domestic</a>
+        <a href="industry.html">Industry</a>
+        <a href="shipandoffshore.html">Shipping/Offshore</a>
+        <a href="snowboost.html">Snow-Boost</a>
+        <a href="agriculture.html">Agriculture</a>
+        <a href="partners.html">Partners</a>
+        <a href="index.html#history">History</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close ×</a
+      >
+
+      <a href="/" class="w3-bar-item w3-button">Home</a>
+      <a href="domestic.html" class="w3-bar-item w3-button">Domestic</a>
+      <a href="industry.html" class="w3-bar-item w3-button">Industry</a>
+      <a href="shipandoffshore.html" class="w3-bar-item w3-button"
+        >Shipping/Offshore</a
+      >
+      <a href="snowboost.html" class="w3-bar-item w3-button">Snow-Boost</a>
+      <a href="agriculture.html" class="w3-bar-item w3-button">Agriculture</a>
+      <a href="partners.html" class="w3-bar-item w3-button">Partners</a>
+      <a href="index.html#history" class="w3-bar-item w3-button">History</a>
+      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header
+      class="bgimg-1 w3-display-container w3-grayscale-min"
+      id="home"
+    ></header>
+
+    <!-- About Section -->
+    <div class="container" id="about">
+      <div class="flex-container">
+        <div class="domestic-list-container">
+          <h4>The Hard-water challenge:</h4>
+          <ul>
+            <li>Say yes to healthy Calcium in your potable water</li>
+            <li>But say no to scale…</li>
+            <img
+              loading="lazy"
+              src="assets/img/PI-18.jpg"
+              alt="image of product name PL-18"
+            />
+            <li>No pollution or bad taste from salt-tablets</li>
+            <li>Maintains the original water hardness</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="negative-examples-list">
+            <li
+              class="image-wrapper"
+              style="background-image: url('assets/img/heaterelement.jpg')"
+            >
+              <svg
+                class="red-x"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  fill="#ff1515"
+                  d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+                />
+              </svg>
+            </li>
+            <li
+              class="image-wrapper"
+              style="background-image: url('assets/img/showerhead.png')"
+            >
+              <svg
+                class="red-x"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  fill="#ff1515"
+                  d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+                />
+              </svg>
+            </li>
+            <li
+              class="image-wrapper"
+              style="background-image: url('assets/img/sink.jpg')"
+            >
+              <svg
+                class="red-x"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  fill="#ff1515"
+                  d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="water-treatment-table">
+        <div class="table-wrapper">
+          <h2>WATER TREATMENT AT A GLANCE</h2>
+          <table style="width: 100%">
+            <tr>
+              <th class="top-tr" rowspan="2">SUBJECT</th>
+              <th class="top-tr" colspan="3">YOUR CHOICE</th>
+            </tr>
+            <tr>
+              <th class="back-light-blue">
+                Ion Exchanger<br />
+                (Salt-unit)
+              </th>
+              <th class="back-light-blue">
+                Poly-Phs<br />
+                Sili-Phos
+              </th>
+              <th class="back-blue">
+                Polar<br />
+                PMS + PI
+              </th>
+            </tr>
+            <tr>
+              <td>Pollutes the water</td>
+              <td class="back-red">YES</td>
+              <td class="back-red">YES</td>
+              <td class="back-green">NO</td>
+            </tr>
+            <tr>
+              <td>Cardiovascular deceases</td>
+              <td class="back-red">TRIGGERS</td>
+              <td class="back-light-green">NEUTRAL</td>
+              <td class="back-light-green">NEUTRAL</td>
+            </tr>
+            <tr>
+              <td>Scale Protection</td>
+              <td class="back-green">80-100%</td>
+              <td class="back-green">30-100%</td>
+              <td class="back-green">70-90%</td>
+            </tr>
+            <tr>
+              <td>Corrosion Protection</td>
+              <td class="back-red">TRIGGERS</td>
+              <td class="back-light-green">20-80%</td>
+              <td class="back-light-green">50-90%</td>
+            </tr>
+            <tr>
+              <td>Protects from toxic metals</td>
+              <td class="back-red">TRIGGERS</td>
+              <td class="back-red">NO</td>
+              <td class="back-light-green">Tillmans film</td>
+            </tr>
+            <tr>
+              <td>Protects from xenoestrogens</td>
+              <td class="back-red">TRIGGERS</td>
+              <td class="back-red">NO</td>
+              <td class="back-light-green">Tillmans film</td>
+            </tr>
+            <tr>
+              <td>Bacteria cultivation</td>
+              <td class="back-red">TRIGGERS</td>
+              <td class="back-red">TRIGGERS</td>
+              <td class="back-green">NO</td>
+            </tr>
+            <tr>
+              <td>Operational cost</td>
+              <td class="back-red">HIGH</td>
+              <td class="back-red">MEDIUM</td>
+              <td class="back-green">NEGLIBLE</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
       <div>
-        <ul class="negative-examples-list">
-          <li class="image-wrapper"
-            style="background-image: url('assets/img/heaterelement.jpg')">
-            <svg class="red-x"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 384 512">
-              <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-              <path fill="#ff1515"
-                d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
-            </svg>
-          </li>
-          <li class="image-wrapper"
-            style="background-image: url('assets/img/showerhead.png')">
-            <svg class="red-x"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 384 512">
-              <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-              <path fill="#ff1515"
-                d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
-            </svg>
-          </li>
-          <li class="image-wrapper"
-            style="background-image: url('assets/img/sink.jpg')">
-            <svg class="red-x"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 384 512">
-              <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-              <path fill="#ff1515"
-                d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
-            </svg>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="water-treatment-table">
-      <div class="table-wrapper">
-        <h2>WATER TREATMENT AT A GLANCE</h2>
-        <table style="width: 100%">
-          <tr>
-            <th class="top-tr" rowspan="2">SUBJECT</th>
-            <th class="top-tr" colspan="3">YOUR CHOICE</th>
-          </tr>
-          <tr>
-            <th class="back-light-blue">
-              Ion Exchanger<br />
-              (Salt-unit)
-            </th>
-            <th class="back-light-blue">
-              Poly-Phs<br />
-              Sili-Phos
-            </th>
-            <th class="back-blue">
-              Polar<br />
-              PMS + PI
-            </th>
-          </tr>
-          <tr>
-            <td>Pollutes the water</td>
-            <td class="back-red">YES</td>
-            <td class="back-red">YES</td>
-            <td class="back-green">NO</td>
-          </tr>
-          <tr>
-            <td>Cardiovascular deceases</td>
-            <td class="back-red">TRIGGERS</td>
-            <td class="back-light-green">NEUTRAL</td>
-            <td class="back-light-green">NEUTRAL</td>
-          </tr>
-          <tr>
-            <td>Scale Protection</td>
-            <td class="back-green">80-100%</td>
-            <td class="back-green">30-100%</td>
-            <td class="back-green">70-90%</td>
-          </tr>
-          <tr>
-            <td>Corrosion Protection</td>
-            <td class="back-red">TRIGGERS</td>
-            <td class="back-light-green">20-80%</td>
-            <td class="back-light-green">50-90%</td>
-          </tr>
-          <tr>
-            <td>Protects from toxic metals</td>
-            <td class="back-red">TRIGGERS</td>
-            <td class="back-red">NO</td>
-            <td class="back-light-green">Tillmans film</td>
-          </tr>
-          <tr>
-            <td>Protects from xenoestrogens</td>
-            <td class="back-red">TRIGGERS</td>
-            <td class="back-red">NO</td>
-            <td class="back-light-green">Tillmans film</td>
-          </tr>
-          <tr>
-            <td>Bacteria cultivation</td>
-            <td class="back-red">TRIGGERS</td>
-            <td class="back-red">TRIGGERS</td>
-            <td class="back-green">NO</td>
-          </tr>
-          <tr>
-            <td>Operational cost</td>
-            <td class="back-red">HIGH</td>
-            <td class="back-red">MEDIUM</td>
-            <td class="back-green">NEGLIBLE</td>
-          </tr>
-        </table>
-      </div>
-    </div>
+        <div>
+          <p style="font-weight: bold; font-size: larger; letter-spacing: 2px">
+            <b>Contact</b>: Polar France,<a
+              style="color: #215e99"
+              href="mailto:https://polar-france.com/"
+              >https://polar-france.com/</a
+            >
+            <br />
+            <a style="color: #215e99" href="mailtodavid.boudot@polar-france.com"
+              >david.boudot@polar-france.com</a
+            >
 
-    <div>
-      <div>
-        <p
-          style="font-weight: bold; font-size: larger; letter-spacing: 2px">
-          <b>Contact</b>: Polar France,<a
-            style="color: #215e99"
-            href="mailto:https://polar-france.com/">https://polar-france.com/</a>
-          <br />
-          <a style="color: #215e99"
-            href="mailtodavid.boudot@polar-france.com">david.boudot@polar-france.com</a>
-
-          <a style="color: #215e99"
-            href="mailto:julien.nordio@polar-france.com">julien.nordio@polar-france.com</a>
-        </p>
+            <a
+              style="color: #215e99"
+              href="mailto:julien.nordio@polar-france.com"
+              >julien.nordio@polar-france.com</a
+            >
+          </p>
+        </div>
       </div>
-    </div>
-    <!--
+      <!--
       <div class="cross-points">
         <div class="cross-wrapper">
           <div class="pic">
@@ -248,41 +275,41 @@
             <img src="assets/img/sink.jpg" alt="" />
           </div>
         </div>-->
-  </div>
+    </div>
 
-  <!-- Footer -->
-  <footer class="w3-center w3-black w3-padding-64">
-    <p>Water treatment since 1938</p>
-    <br />
-    <a href="#home" class="w3-button w3-light-grey"><i
-        class="fa fa-arrow-up w3-margin-right"></i>To the
-      top</a>
-  </footer>
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+      <p>Water treatment since 1938</p>
+      <br />
+      <a href="#home" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+    </footer>
 
-  <script>
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
-
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
-
-    function w3_open() {
-      if (mySidebar.style.display === "block") {
-        mySidebar.style.display = "none";
-      } else {
-        mySidebar.style.display = "block";
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
       }
-    }
 
-    // Close the sidebar with the close button
-    function w3_close() {
-      mySidebar.style.display = "none";
-    }
-  </script>
-</body>
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+    </script>
+  </body>
 </html>

@@ -1,314 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>GWT HOME - DEVELOPER VERSION</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="history.css" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Raleway" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <style>
-    body,
-    html {
-      height: 100%;
-      line-height: 1.8;
-    }
-
-    /* Full height image header */
-    .bgimg-1 {
-      background-position-x: center;
-      background-position-y: -318px;
-      background-size: fill;
-      zoom: 150%;
-      background-image: url("/assets/img/header_img.jpg");
-      min-height: 100%;
-    }
-
-    @media() {}
-
-    .w3-bar .w3-button {
-      padding: 16px;
-    }
-  </style>
-</head>
-<body>
-  <!-- Navbar (sit on top) -->
-  <div class="navbar">
-    <div class="navbar-content" id="myNavbar">
-      <a href="index.html"
-        class="w3-bar-item w3-button w3-wide"><img
-          style="width: 200px"
-          src="assets/img/GWP logo.png" /></a>
-      <!-- Right-sided navbar links -->
-      <div class="navbar-contact">
-        <a
-          href="mailto:gwt@globalwater.no">gwt@globalwater.no</a>
-        <span>+47 941 35 100</span>
-      </div>
-      <a href="javascript:void(0)"
-        class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-        onclick="w3_open()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    <div class="blue-banner">
-      <h1>World-wide since 1938</h1>
-    </div>
-    <div class="blue-navbar w3-hide-small">
-      <a href="/">Home</a>
-      <a href="domestic.html">Domestic</a>
-      <a href="industry.html">Industry</a>
-      <a href="shipandoffshore.html">Shipping/Offshore</a>
-      <a href="snowboost.html">Snow-Boost</a>
-      <a href="agriculture.html">Agriculture</a>
-      <a href="partners.html">Partners</a>
-      <a href="#history">History</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
-
-  <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav
-    class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
-    style="display: none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()"
-      class="w3-bar-item w3-button w3-large w3-padding-16">Close
-      ×</a>
-
-    <a href="/" class="w3-bar-item w3-button">Home</a>
-    <a href="domestic.html"
-      class="w3-bar-item w3-button">Domestic</a>
-    <a href="industry.html"
-      class="w3-bar-item w3-button">Industry</a>
-    <a href="shipandoffshore.html"
-      class="w3-bar-item w3-button">Shipping/Offshore</a>
-    <a href="snowboost.html"
-      class="w3-bar-item w3-button">Snow-Boost</a>
-    <a href="agriculture.html"
-      class="w3-bar-item w3-button">Agriculture</a>
-    <a href="partners.html"
-      class="w3-bar-item w3-button">Partners</a>
-    <a href="#history"
-      class="w3-bar-item w3-button">History</a>
-    <a href="contact.html"
-      class="w3-bar-item w3-button">Contact</a>
-  </nav>
-
-  <!-- Header with full-height image -->
-  <header
-    class="bgimg-1 w3-display-container w3-grayscale-min"
-    id="home"></header>
-
-  <!-- About Section -->
-  <div class="w3-container" style="padding: 128px 16px"
-    id="history">
-    <h3 class="w3-center">THE COMPANY HISTORY</h3>
-    <section class="section-history">
-      <ul>
-        <li style="">
-          <div class="date">2024</div>
-          <div class="title">Expansion</div>
-          <div class="descr">
-            The GDI group acquires Polar International,
-            water-treatment since
-            1938
-          </div>
-        </li>
-        <li style="">
-          <div class="date">2022</div>
-          <div class="title">New spin-off company</div>
-          <div class="descr">Fleco (artificial
-            Snow-equipment)</div>
-        </li>
-        <li style="">
-          <div class="date">2021</div>
-          <div class="title">New sister company</div>
-          <div class="descr">Firespear Protection Systems
-            (Firefighting)</div>
-        </li>
-        <li style="">
-          <div class="date">2019</div>
-          <div class="title">New product line</div>
-          <div class="descr">Polar PMS+PI20, 25, 32</div>
-        </li>
-        <li style="">
-          <div class="date">2014</div>
-          <div class="title">New product line</div>
-          <div class="descr">Polar PMS+PI18</div>
-        </li>
-        <li style="">
-          <div class="date">2013</div>
-          <div class="title">Government grant</div>
-          <div class="descr">
-            2013, Government grant for innovation awards
-          </div>
-        </li>
-        <li style="">
-          <div class="date">2011</div>
-          <div class="title">New sister-companies</div>
-          <div class="descr">
-            Polar Miljø (Waste-handling) and Polar Future
-            (Lifeboat-release-systems)
-          </div>
-        </li>
-        <li style="">
-          <div class="date">2008</div>
-          <div class="title">New Product line</div>
-          <div class="descr">PMS+PI40, 50, 65</div>
-        </li>
-        <li style="">
-          <div class="date">2007</div>
-          <div class="title">Certification Program</div>
-          <div class="descr">New QA/QC Certification program
-          </div>
-        </li>
-        <li style="">
-          <div class="date">2003</div>
-          <div class="title">Expansion</div>
-          <div class="descr">
-            Expansion of the shipping and industrial market
-          </div>
-        </li>
-        <li style="">
-          <div class="date">2002</div>
-          <div class="title">Sales Rights Acquisition</div>
-          <div class="descr">
-            Polar-France acquires sales rights for product
-            series PD10, PD15,
-            PDF21 and PDF22
-          </div>
-        </li>
-        <li style="">
-          <div class="date">1999</div>
-          <div class="title">Technology-merge</div>
-          <div class="descr">Classic Polar +
-            Flow-regime-control</div>
-        </li>
-        <li style="">
-          <div class="date">1994</div>
-          <div class="title">New design</div>
-          <div class="descr">
-            New design allowing inspection without
-            dismantling from piping
-          </div>
-        </li>
-        <li style="">
-          <div class="date">1992</div>
-          <div class="title">New QA/QC program</div>
-          <div class="descr">
-            Project VIN-92, further joined product
-            development
-            Polar/NIVA/CSTB/VIV
-          </div>
-        </li>
-        <li style="">
-          <div class="date">1989</div>
-          <div class="title">NIVA publication</div>
-          <div class="descr">NIVA publication on Polar water
-            treatment</div>
-        </li>
-        <li style="">
-          <div class="date">1982</div>
-          <div class="title">Research Publication</div>
-          <div class="descr">
-            Doctor Frank Ellingsen publish groundbreaking
-            research and
-            enlightenment on Polar products
-          </div>
-        </li>
-        <li style="">
-          <div class="date">1979</div>
-          <div class="title">Research Publication</div>
-          <div class="descr">
-            Hans Kristiansen (NIVA) and Doctor Frank
-            Ellingsen publish
-            fundamental research on Polar.
-          </div>
-        </li>
-        <li style="">
-          <div class="date">1976</div>
-          <div class="title">Opening of Polar International
-            Laboratories</div>
-          <div class="descr">
-            Opening of Polar International own research
-            laboratories in
-            Sandefjord engaging:<br />
-            <span class="bullet">&#8226;</span>NIVA,
-            Norwegian Institute for
-            Water Research<br />
-            <span class="bullet">&#8226;</span> NTNU/Sintef,
-            Norwegian
-            university of technology<br />
-            <span class="bullet">&#8226;</span>CSTB, Centre
-            et Scientific et
-            Technique du Batiment<br />
-            <span class="bullet">&#8226;</span>John-Hopkins
-            university, Doctor
-            Frank Ellingsen<br />
-            <span class="bullet">&#8226;</span>DTU, Denmark
-            university of
-            technology, cleaning technologies
-          </div>
-        </li>
-        <li style="">
-          <div class="date">1938</div>
-          <div class="title">The Establishment</div>
-          <div class="descr">
-            The establishment of Polar International by Mr.
-            Olaf Fjeldsend
-            (Sr.)
-          </div>
-        </li>
-        <li style="">
-          <div class="date">1887</div>
-          <div class="title">First Patent</div>
-          <div class="descr">
-            First patent on non-chemical hard-water
-            treatment (Pre-Polar)
-          </div>
-        </li>
-      </ul>
-    </section>
-  </div>
-
-  <!-- Footer -->
-  <footer class="w3-center w3-black w3-padding-64">
-    <p>Water treatment since 1938</p>
-    <br />
-    <a href="#home" class="w3-button w3-light-grey"><i
-        class="fa fa-arrow-up w3-margin-right"></i>To the
-      top</a>
-  </footer>
-
-  <script>
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
-
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
-
-    function w3_open() {
-      if (mySidebar.style.display === "block") {
-        mySidebar.style.display = "none";
-      } else {
-        mySidebar.style.display = "block";
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GWT HOME - DEVELOPER VERSION</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="history.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        line-height: 1.8;
       }
-    }
 
-    // Close the sidebar with the close button
-    function w3_close() {
-      mySidebar.style.display = "none";
-    }
-  </script>
-</body>
+      /* Full height image header */
+      .bgimg-1 {
+        background-position-x: center;
+        background-position-y: -318px;
+        background-size: fill;
+        zoom: 150%;
+        background-image: url("/assets/img/header_img.jpg");
+        min-height: 100%;
+      }
+
+      @media() {
+      }
+
+      .w3-bar .w3-button {
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="navbar">
+      <div class="navbar-content" id="myNavbar">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide"
+          ><img style="width: 200px" src="assets/img/GWP logo.png"
+        /></a>
+        <!-- Right-sided navbar links -->
+        <div class="navbar-contact">
+          <a href="mailto:gwt@globalwater.no">gwt@globalwater.no</a>
+          <span>+47 941 35 100</span>
+        </div>
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="blue-banner">
+        <h1>World-wide since 1938</h1>
+      </div>
+      <div class="blue-navbar w3-hide-small">
+        <a href="/">Home</a>
+        <a href="domestic.html">Domestic</a>
+        <a href="industry.html">Industry</a>
+        <a href="shipandoffshore.html">Shipping/Offshore</a>
+        <a href="snowboost.html">Snow-Boost</a>
+        <a href="agriculture.html">Agriculture</a>
+        <a href="partners.html">Partners</a>
+        <a href="#history">History</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close ×</a
+      >
+
+      <a href="/" class="w3-bar-item w3-button">Home</a>
+      <a href="domestic.html" class="w3-bar-item w3-button">Domestic</a>
+      <a href="industry.html" class="w3-bar-item w3-button">Industry</a>
+      <a href="shipandoffshore.html" class="w3-bar-item w3-button"
+        >Shipping/Offshore</a
+      >
+      <a href="snowboost.html" class="w3-bar-item w3-button">Snow-Boost</a>
+      <a href="agriculture.html" class="w3-bar-item w3-button">Agriculture</a>
+      <a href="partners.html" class="w3-bar-item w3-button">Partners</a>
+      <a href="#history" class="w3-bar-item w3-button">History</a>
+      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header
+      class="bgimg-1 w3-display-container w3-grayscale-min"
+      id="home"
+    ></header>
+
+    <!-- About Section -->
+    <div class="w3-container" style="padding: 128px 16px" id="history">
+      <h3 class="w3-center">THE COMPANY HISTORY</h3>
+      <section class="section-history">
+        <ul>
+          <li style="">
+            <div class="date">2024</div>
+            <div class="title">Expansion</div>
+            <div class="descr">
+              The GDI group acquires Polar International, water-treatment since
+              1938
+            </div>
+          </li>
+          <li style="">
+            <div class="date">2022</div>
+            <div class="title">New spin-off company</div>
+            <div class="descr">Fleco (artificial Snow-equipment)</div>
+          </li>
+          <li style="">
+            <div class="date">2021</div>
+            <div class="title">New sister company</div>
+            <div class="descr">Firespear Protection Systems (Firefighting)</div>
+          </li>
+          <li style="">
+            <div class="date">2019</div>
+            <div class="title">New product line</div>
+            <div class="descr">Polar PMS+PI20, 25, 32</div>
+          </li>
+          <li style="">
+            <div class="date">2014</div>
+            <div class="title">New product line</div>
+            <div class="descr">Polar PMS+PI18</div>
+          </li>
+          <li style="">
+            <div class="date">2013</div>
+            <div class="title">Government grant</div>
+            <div class="descr">
+              2013, Government grant for innovation awards
+            </div>
+          </li>
+          <li style="">
+            <div class="date">2011</div>
+            <div class="title">New sister-companies</div>
+            <div class="descr">
+              Polar Miljø (Waste-handling) and Polar Future
+              (Lifeboat-release-systems)
+            </div>
+          </li>
+          <li style="">
+            <div class="date">2008</div>
+            <div class="title">New Product line</div>
+            <div class="descr">PMS+PI40, 50, 65</div>
+          </li>
+          <li style="">
+            <div class="date">2007</div>
+            <div class="title">Certification Program</div>
+            <div class="descr">New QA/QC Certification program</div>
+          </li>
+          <li style="">
+            <div class="date">2003</div>
+            <div class="title">Expansion</div>
+            <div class="descr">
+              Expansion of the shipping and industrial market
+            </div>
+          </li>
+          <li style="">
+            <div class="date">2002</div>
+            <div class="title">Sales Rights Acquisition</div>
+            <div class="descr">
+              Polar-France acquires sales rights for product series PD10, PD15,
+              PDF21 and PDF22
+            </div>
+          </li>
+          <li style="">
+            <div class="date">1999</div>
+            <div class="title">Technology-merge</div>
+            <div class="descr">Classic Polar + Flow-regime-control</div>
+          </li>
+          <li style="">
+            <div class="date">1994</div>
+            <div class="title">New design</div>
+            <div class="descr">
+              New design allowing inspection without dismantling from piping
+            </div>
+          </li>
+          <li style="">
+            <div class="date">1992</div>
+            <div class="title">New QA/QC program</div>
+            <div class="descr">
+              Project VIN-92, further joined product development
+              Polar/NIVA/CSTB/VIV
+            </div>
+          </li>
+          <li style="">
+            <div class="date">1989</div>
+            <div class="title">NIVA publication</div>
+            <div class="descr">NIVA publication on Polar water treatment</div>
+          </li>
+          <li style="">
+            <div class="date">1982</div>
+            <div class="title">Research Publication</div>
+            <div class="descr">
+              Doctor Frank Ellingsen publish groundbreaking research and
+              enlightenment on Polar products
+            </div>
+          </li>
+          <li style="">
+            <div class="date">1979</div>
+            <div class="title">Research Publication</div>
+            <div class="descr">
+              Hans Kristiansen (NIVA) and Doctor Frank Ellingsen publish
+              fundamental research on Polar.
+            </div>
+          </li>
+          <li style="">
+            <div class="date">1976</div>
+            <div class="title">Opening of Polar International Laboratories</div>
+            <div class="descr">
+              Opening of Polar International own research laboratories in
+              Sandefjord engaging:<br />
+              <span class="bullet">&#8226;</span>NIVA, Norwegian Institute for
+              Water Research<br />
+              <span class="bullet">&#8226;</span> NTNU/Sintef, Norwegian
+              university of technology<br />
+              <span class="bullet">&#8226;</span>CSTB, Centre et Scientific et
+              Technique du Batiment<br />
+              <span class="bullet">&#8226;</span>John-Hopkins university, Doctor
+              Frank Ellingsen<br />
+              <span class="bullet">&#8226;</span>DTU, Denmark university of
+              technology, cleaning technologies
+            </div>
+          </li>
+          <li style="">
+            <div class="date">1938</div>
+            <div class="title">The Establishment</div>
+            <div class="descr">
+              The establishment of Polar International by Mr. Olaf Fjeldsend
+              (Sr.)
+            </div>
+          </li>
+          <li style="">
+            <div class="date">1887</div>
+            <div class="title">First Patent</div>
+            <div class="descr">
+              First patent on non-chemical hard-water treatment (Pre-Polar)
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+      <p>Water treatment since 1938</p>
+      <br />
+      <a href="#home" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+    </footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+    </script>
+  </body>
 </html>
